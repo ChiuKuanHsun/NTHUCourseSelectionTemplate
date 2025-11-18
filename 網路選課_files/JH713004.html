@@ -713,8 +713,9 @@
     <tr> 
     	<input type="hidden" name="toChk">
       <td class="class2" onmouseover="return overlib(&#39;此處可查到某系所之所有課，科號由小到大排列&#39;,WIDTH,200,TEXTSIZE,2);" onmouseout="nd();">總錄(curriculum catalog)：
-        <select name="new_dept" onchange="this.form.toChk.value=&quot;1&quot;;this.form.action=&quot;JH713004.php&quot;;this.form.target=&quot;_self&quot;;this.form.submit();">
-                		<option value="AES">AES 分環所 Institute of Analytical and Environmental Sciences</option>
+        <select name="new_dept" onchange="if(this.value=='GE'){window.location.href='https://nthucourseselectiontemplate.pages.dev/%E9%80%9A%E8%AD%98';}else{this.form.toChk.value='1';this.form.action='JH713004.php';this.form.target='_self';this.form.submit();}">
+                		<option value="GE">GE 通識中心 General Education Center</option>
+						<option value="AES">AES 分環所 Institute of Analytical and Environmental Sciences</option>
                 		<option value="AIA">AIA 台灣人工智慧學程聯盟 Taiwan Artificial Intelligence College Alliance</option>
                 		<option value="AIIM">AIIM AI智造暨聯網產碩專班 Industrial Technology Graduate Program of AI Intelligent Manufacturing &amp; Intelligent IoT Production</option>
                 		<option value="AIMS">AIMS 智慧製造高階泰國專班 AIMS Fellows in Thailand</option>
@@ -756,7 +757,7 @@
                 		<option value="FL">FL 外語系 Department of Foreign Languages and Literature</option>
                 		<option value="FLU">FLU 外語系與交大合作課程 Foreign Languages and Literature and NCTU</option>
                 		<option value="FMMI">FMMI 流機暨材料與智檢產碩 Industrial Technology Graduate Program of Fluid Machinery and Advanced Materials with Intelligent In</option>
-                		<option value="GE">GE 通識中心 General Education Center</option>
+
                 		<option value="GEC">GEC 通識核心 General Education Core Courses</option>
                 		<option value="GEU">GEU 通識中心與交大合作課 General Education and NCTU</option>
                 		<option value="GLLB">GLLB 學士後法律學士學位學  </option>
